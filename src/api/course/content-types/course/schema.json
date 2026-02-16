@@ -48,8 +48,7 @@
       "maxLength": 300
     },
     "whyChooseDescription": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
     "whyChooseBadge": {
       "type": "string",
@@ -59,73 +58,58 @@
     "whyChooseImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
       "allowedTypes": ["images"]
     },
     "leftFeatures": {
-      "type": "json",
-      "required": true
+      "type": "json"
     },
     "rightFeatures": {
-      "type": "json",
-      "required": true
+      "type": "json"
     },
     "benefitCards": {
-      "type": "json",
-      "required": true
+      "type": "json"
     },
     "benefitBadge": {
       "type": "string",
-      "required": true,
       "maxLength": 100
     },
     "benefitTitle": {
       "type": "string",
-      "required": true,
       "maxLength": 300
     },
     "learnBadge": {
       "type": "string",
-      "required": true,
       "maxLength": 100
     },
     "learnTitle": {
       "type": "string",
-      "required": true,
       "maxLength": 300
     },
     "learnDescription": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
     "learnImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
       "allowedTypes": ["images"]
     },
     "learnPoints": {
-      "type": "json",
-      "required": true
+      "type": "json"
     },
     "offerTitle": {
       "type": "string",
-      "required": true,
       "maxLength": 300
     },
     "offerDescription": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
     "offerImage": {
       "type": "media",
       "multiple": false,
-      "required": true,
       "allowedTypes": ["images"]
     },
     "offerDetailText": {
-      "type": "richtext",
-      "required": true
+      "type": "richtext"
     },
     "ctaBannerTitle": {
       "type": "string",
