@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Setting",
+    "description": "Global site configuration"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "enumeration",
+      "enum": ["lv", "main"],
+      "required": true,
+      "default": "lv"
+    },
+    "siteName": {
+      "type": "string",
+      "required": true,
+      "default": "Aiinfox Tech"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "contactEmail": {
+      "type": "string",
+      "required": true
+    },
+    "contactPhone": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "copyrightText": {
+      "type": "string"
+    },
+    "footerDescription": {
+      "type": "text"
+    },
+    "googleMapsEmbed": {
+      "type": "text"
+    },
+    "recaptchaSiteKey": {
+      "type": "string"
+    }
+  }
+}

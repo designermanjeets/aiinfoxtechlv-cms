@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partner_logos",
+  "info": {
+    "singularName": "partner-logo",
+    "pluralName": "partner-logos",
+    "displayName": "Partner Logo",
+    "description": "Technology, university, and company partner logos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "enumeration",
+      "enum": ["lv", "main"],
+      "required": true,
+      "default": "lv"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["technology", "university", "company"],
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    }
+  }
+}

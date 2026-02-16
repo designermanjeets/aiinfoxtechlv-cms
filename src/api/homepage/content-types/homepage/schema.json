@@ -1,0 +1,122 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": "Homepage content and sections"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "enumeration",
+      "enum": ["lv", "main"],
+      "required": true,
+      "default": "lv"
+    },
+    "heroBadge": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "heroTitle": {
+      "type": "string",
+      "maxLength": 300
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "heroBannerImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "heroStats": {
+      "type": "json"
+    },
+    "heroPrimaryCTA": {
+      "type": "json"
+    },
+    "heroSecondaryCTA": {
+      "type": "json"
+    },
+    "instructorsBadge": {
+      "type": "string"
+    },
+    "instructorsTitle": {
+      "type": "string"
+    },
+    "instructorsDescription": {
+      "type": "text"
+    },
+    "instructorsImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "instructorsStats": {
+      "type": "json"
+    },
+    "coursesSectionBadge": {
+      "type": "string"
+    },
+    "coursesSectionTitle": {
+      "type": "string"
+    },
+    "coursesSectionDescription": {
+      "type": "text"
+    },
+    "opportunitiesBadge": {
+      "type": "string"
+    },
+    "opportunitiesTitle": {
+      "type": "string"
+    },
+    "opportunitiesDescription": {
+      "type": "richtext"
+    },
+    "opportunitiesImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "opportunityItems": {
+      "type": "json"
+    },
+    "browseBadge": {
+      "type": "string"
+    },
+    "browseTitle": {
+      "type": "string"
+    },
+    "browseDescription": {
+      "type": "text"
+    },
+    "browseFeaturedSlugs": {
+      "type": "json"
+    },
+    "callbackTitle": {
+      "type": "string"
+    },
+    "callbackDescription": {
+      "type": "text"
+    },
+    "universitiesSectionTitle": {
+      "type": "string"
+    },
+    "universitiesSectionDescription": {
+      "type": "text"
+    },
+    "testimonialsSectionTitle": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-meta.seo-meta"
+    }
+  }
+}

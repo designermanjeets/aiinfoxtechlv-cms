@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navigations",
+  "info": {
+    "singularName": "navigation",
+    "pluralName": "navigations",
+    "displayName": "Navigation",
+    "description": "Site navigation menus"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "enumeration",
+      "enum": ["lv", "main"],
+      "required": true,
+      "default": "lv"
+    },
+    "mainMenu": {
+      "type": "json",
+      "required": true
+    },
+    "footerResources": {
+      "type": "json",
+      "required": true
+    },
+    "footerFeaturedCourses": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

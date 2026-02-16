@@ -1,0 +1,156 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "Course",
+    "description": "Training course programs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "enumeration",
+      "enum": ["lv", "main"],
+      "required": true,
+      "default": "lv"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "heroTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "heroSubtitle": {
+      "type": "text",
+      "required": true
+    },
+    "whyChooseTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "whyChooseDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "whyChooseBadge": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "whyChooseImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "leftFeatures": {
+      "type": "json",
+      "required": true
+    },
+    "rightFeatures": {
+      "type": "json",
+      "required": true
+    },
+    "benefitCards": {
+      "type": "json",
+      "required": true
+    },
+    "benefitBadge": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "benefitTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "learnBadge": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "learnTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "learnDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "learnImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "learnPoints": {
+      "type": "json",
+      "required": true
+    },
+    "offerTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "offerDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "offerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "offerDetailText": {
+      "type": "richtext",
+      "required": true
+    },
+    "ctaBannerTitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 300
+    },
+    "ctaButtonText": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "icon": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-meta.seo-meta"
+    }
+  }
+}

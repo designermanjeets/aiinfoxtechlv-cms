@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "FAQ",
+    "description": "Frequently asked questions for Schema.org"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "site": {
+      "type": "enumeration",
+      "enum": ["lv", "main"],
+      "required": true,
+      "default": "lv"
+    },
+    "question": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    },
+    "answer": {
+      "type": "text",
+      "required": true
+    },
+    "page": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    }
+  }
+}
